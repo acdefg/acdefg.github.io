@@ -122,3 +122,7 @@ npm install hexo-deployer-git --save //git deply
         repository:
             github: git@github.com:acdefg/acdefg.github.io.git,backup
    ```
+### sakura主题
+#### fontaware动态效果
+参考链接：https://flymc.cc/Sakura/<br>
+这里可根据自己的需要进行修改，不需要的可以删除或者#注释掉，path: /xxx/ 所在目录为\Blog\source\xxx\，fa: fa-xxx 为图标，可在Font-Awesome官网中搜索到，如游戏机图标为 fa-gamepad。faa-xxxxx 为鼠标悬浮在图标上的动态效果，如 faa-shake 为左右摇晃，faa-vertical 垂直摇晃，可根据自己喜好修改，在后续添加顶栏菜单项时也可以自行使用。

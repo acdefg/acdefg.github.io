@@ -85,7 +85,7 @@ deploy:
   message: generate my blog
   repository:
     github: git@github.com:acdefg/acdefg.github.io.git
-    #gitee: git@gitee.com:ljv0606/ljv0606.git
+    gitee: git@gitee.com:ljv0606/ljv0606.git
   branch: master
 
 # backup
