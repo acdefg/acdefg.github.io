@@ -1,12 +1,12 @@
 ---
 title: {{ title }}
 date: {{ date }}
-author: hojun
-avatar: https://wx1.sinaimg.cn/large/006bYVyvgy1ftand2qurdj303c03cdfv.jpg
-authorLink: hojun.cn
-authorAbout: 一个好奇的人
-authorDesc: 一个好奇的人
-categories: 技术
+author: Cici
+avatar: https://gitee.com/ljv0606/cdn/raw/master/img/avatar.webp
+authorLink: /about
+authorAbout: 一个菜鸡
+authorDesc: 一个菜鸡
+categories: uncatagorized
 comments: true
 tags: 
 keywords: 

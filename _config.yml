@@ -3,19 +3,19 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: hojun
-subtitle:
-description: 好少年光芒万丈
-keywords:
-author: hojun
+title: BLOG
+subtitle: 'Welcome'
+description: blog | code
+keywords: "my self-built blog"
+author: Cici
 language: zh-cn
-timezone:
+timezone: ''
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://ljc0606.top
 root: /
-permalink: :year/:month/:day/:title/
+permalink: :category/:title/
 permalink_defaults:
 
 # Directory
@@ -82,16 +82,16 @@ theme: Sakura
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  message: generate my blog of https://acdefg.github.io/
+  message: generate my blog
   repository:
     github: git@github.com:acdefg/acdefg.github.io.git
-    gitee: git@gitee.com:ljv0606/ljv0606.git
+    #gitee: git@gitee.com:ljv0606/ljv0606.git
   branch: master
 
 # backup
 backup:
   type: git
-  message: backup my blog of https://acdefg.github.io/
+  message: backup my blog
   repository:
     github: git@github.com:acdefg/acdefg.github.io.git,backup
     #coding: https://git.coding.net/hojun/hojun.git,backup
