@@ -16,26 +16,23 @@ lazyloadImg: https://gitee.com/ljv0606/cdn/raw/master/img/loading.gif
 
 menus:
   首页: { path: /, fa: fa-fort-awesome faa-shake }
-  归档: { path: /archives, fa: fa-archive faa-shake, submenus: { 
-    技术: {path: /categories/技术/, fa: fa-code }, 
-    生活: {path: /categories/生活/, fa: fa-file-text-o }, 
-    搞事情: {path: /categories/搞事情/, fa: fa-cloud-download }, 
-    正经学: {path: /categories/正经学/, fa: fa-commenting-o },
-    转载: {path: /categories/转载/, fa: fa-book }
+  归档: { path: /archives, fa: fa-archive faa-bounce, submenus: { 
+    生活: {path: /categories/生活/, fa: fa-bath }, 
+    学习: {path: /categories/学习/, fa: fa-graduation-cap }, 
+    兴趣: {path: /categories/兴趣/, fa: fa-heart-o }
   } }
   清单: { path: javascript:;, fa: fa-list-ul faa-vertical, submenus: { 
-    书单: {path: /tags/悦读/, fa: fa-th-list faa-bounce }, 
+    书单: {path: /tags/书单/, fa: fa-list-alt faa-bounce }, 
     电影: {path: /bangumi/, fa: fa-film faa-vertical }, 
-    歌单: {path: /music/, fa: fa-headphones },
-    图集: {path: /tags/图集/, fa: fa-photo }
+    图集: {path: /video/, fa: fa-camera-retro faa-shake}
   } }
   留言板: { path: /comment/, fa: fa-pencil-square-o faa-tada }
   参考集: { path: /links/, fa: fa-link faa-shake }
-  关于: { path: /, fa: fa-leaf faa-wrench , submenus: { 
+  关于: { path: /, fa: fa-leaf faa-bounce , submenus: { 
     我？: {path: /about/, fa: fa-meetup}, 
-    Lab: {path: /lab/, fa: fa-cogs },
+    Lab: {path: /lab/, fa: fa-flask },
   } }
-  RSS: { path: /atom.xml, fa: fa-rss faa-pulse }
+  RSS: { path: /atom.xml, fa: fa-rss faa-wrench }
 
 
 # Home page sort type: -1: newer first，1: older first.
@@ -80,9 +77,9 @@ msocial:
 
 # 视频地址为https://cdn.jsdelivr.net/gh/honjun/hojun@1.2/Unbroken.mp4，配置如下
 movies:
-  url: 
+  url: https://gitee.com/ljv0606/cdn/raw/master/img
   # 多个视频用逗号隔开，随机获取。支持的格式目前已知MP4,Flv。其他的可以试下，不保证有用
-  name: 
+  name: yanshi.flv
   
 aplayer: 
   id: 2722953071

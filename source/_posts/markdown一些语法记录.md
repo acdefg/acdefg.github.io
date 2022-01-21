@@ -1,17 +1,17 @@
 ---
 title: markdown一些语法记录
 author: Cici
-avatar: 'https://wx1.sinaimg.cn/large/006bYVyvgy1ftand2qurdj303c03cdfv.jpg'
-authorLink: hojun.cn
-authorAbout: 一个好奇的人
-authorDesc: 一个好奇的人
-categories: 博客
+avatar: https://gitee.com/ljv0606/cdn/raw/master/img/logo.webp
+authorLink: /about
+authorAbout: 小菜出击
+authorDesc: 小菜出击
+categories: 技术
 comments: true
 date: 2022-01-20 13:00:28
-tags:
+tags: note
 keywords:
-description:
-photos:
+description: 存一些不常见用法和引用
+photos: https://gitee.com/ljv0606/cdn/raw/master/img/b3.webp
 ---
 
 #### 图片引用格式

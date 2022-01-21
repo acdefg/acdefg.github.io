@@ -1,17 +1,17 @@
 ---
 title: 安装julp的一些坑
-top: false
-cover: false
-toc: true
-mathjax: false
-date: 2022-01-19 20:39:38
 author: Cici
-img: /medias/featureimages/5.webp
-coverImg:
-password:
-summary: 踩坑记录
-tags: issues
-categories: blog
+avatar: https://gitee.com/ljv0606/cdn/raw/master/img/头像1.jpg
+authorLink: /about
+authorAbout: 小菜本菜
+authorDesc: 小菜本菜
+categories: 技术
+comments: true
+date: 2022-01-20 12:08:05
+tags: issue
+keywords: julp | hexo
+description: 安装julp网上的教程编译错误
+photos: https://gitee.com/ljv0606/cdn/raw/master/img/b6.webp
 ---
 ## 一些坑
 ### 记录一些记下来的

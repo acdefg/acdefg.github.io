@@ -1,9 +1,9 @@
 home: 首页
 archives: 文章归档
-about: 关于作者
-categories: 分类
+about: 关于我
+categories: 分类集
 series: 系列文章
-search: 搜索
+search: 找找
 searchPlaceHolder: 请输入关键字
 tags: 标签
 tagcloud: 标签云
@@ -11,7 +11,7 @@ video: 视频资源
 help: 关于本站
 links: 友情链接
 photo: 图集
-book: 悦读
+book: 书单
 music: 音乐
 cloud: 资源
 prev: <i class="iconfont icon-back"></i>
@@ -23,33 +23,62 @@ newer: 上一篇
 older: 下一篇
 share: 分享
 theme_by: Theme by
-rss_feed: RSS Feed
-category: Category
-tag: Tag
-connect: '联系我们'
-post_total_count: 嗯，目前共计%d篇文章
-read_more: '阅读全文'
+rss_feed: RSS订阅
+category: 分类
+tag: 标签
+connect: 'Call 我'
+post_total_count: 呀，我已经写了%d篇文章
+read_more: '还有呢'
 contents: 文章目录
 
 none: 无
 insight:
-    hint: '请输入关键词...'
+    hint: '你要找啥，我大发慈悲地帮你一下'
     posts: '文章'
     pages: '页面'
     categories: '分类'
     tags: '标签'
-    untitled: '(无标题)'
+    untitled: '没有名字的'
+    uncatalogized: ‘不想分类的的’
 
 #category
-技术:
-    zh: 野生技术协会
-    en: Geek – Only for Love
-    img: https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/banner/coding.jpg
+学习:
+    zh: 我要认真辣
+    en: Day day up
+    img: https://gitee.com/ljv0606/cdn/raw/master/img/2.webp
 生活:
-    zh: 生活
-    en: live
-    img: https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/banner/writing.jpg
+    zh: 今天干点啥呢
+    en: life
+    img: https://gitee.com/ljv0606/cdn/raw/master/img/7.webp
+兴趣:
+    zh: 捣点乱，搞点怪
+    en: interests
+    img: https://gitee.com/ljv0606/cdn/raw/master/img/3.webp
+
+#清单
+书单:
+    zh: 想看的书
+    en: books
+    img: https://gitee.com/ljv0606/cdn/raw/master/img/6.webp
+电影:
+    zh: 电影
+    en: moives
+    img: https://gitee.com/ljv0606/cdn/raw/master/img/0.webp
+图集:
+    zh: 好看的图片，愉快的心情
+    en: photo
+    img: https://gitee.com/ljv0606/cdn/raw/master/img/1.webp
 
 #tag
-悦读:
-    img: https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/banner/reading.jpg
+issue:
+    zh: 解决了一些问题，嘿嘿
+    en: ISSUES
+    img: https://gitee.com/ljv0606/cdn/raw/master/img/4.webp
+plan:
+    zh: 做点小计划，不保证完成的那种
+    en: PLANS
+    img: https://gitee.com/ljv0606/cdn/raw/master/img/5.webp
+note:
+    zh: 马什么梅，写下来
+    en: NOTES
+    img: https://gitee.com/ljv0606/cdn/raw/master/img/5.webp

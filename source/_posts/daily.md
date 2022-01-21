@@ -1,17 +1,17 @@
 ---
-title: daily
-top: false
-cover: false
-toc: true
-mathjax: false
-date: 2022-01-19 01:17:38
+title: 日计划
 author: Cici
-img:
-coverImg:
-password:
-summary: daily plan
-tags: study
-categories: organize
+avatar: https://gitee.com/ljv0606/cdn/raw/master/img/头像1.jpg
+authorLink: /about
+authorAbout: 小菜本菜
+authorDesc: 小菜本菜
+categories: 学习
+comments: true
+date: 2022-01-20 12:08:05
+tags: plan
+keywords: julp | hexo
+description: 给快要结束的寒假做个小计划
+photos: https://gitee.com/ljv0606/cdn/raw/master/img/b5.webp
 ---
 
 ## Daily tasks

@@ -5791,7 +5791,7 @@ button.botui-actions-buttons-button {
     padding-top:11px;
     text-decoration-line:none
 }
-.logolink .sakurasono {
+.logolink .sakuraso {
     background-color:rgba(255,255,255,.5);
     border-radius:5px;
     color:#464646;
@@ -5803,10 +5803,37 @@ button.botui-actions-buttons-button {
     text-size-adjust:100%;
     width:auto
 }
-.logolink a:hover .sakurasono {
+.logolink.moe-mashiro .no {
+    display: inline-block;
+    margin-left: 5px;
+}
+.logolink a:hover .sakuraso {
     background-color:orange;
     color:#fff
 }
+
+/*定义动画*/
+@-webkit-keyframes spin { /*兼容性写法。spin是关键帧的动画名称*/
+from { /*动画起始状态*/
+    -webkit-transform: rotate(0deg);
+}
+to { /*动画结束状态*/
+    -webkit-transform: rotate(360deg);
+}
+}
+@keyframes spin {
+from {
+    transform: rotate(0deg);
+}
+to {
+    transform: rotate(360deg);
+}
+}
+.logolink a:hover .no {
+    -webkit-animation: spin 1s linear infinite;/*鼠标hover时，i图标旋转,infinite表示动画无限循环*/
+    animation: spin 1s linear infinite;    
+}
+
 .logolink a:hover .shironeko,.logolink a:hover rt {
     color:orange
 }
@@ -5822,7 +5849,7 @@ button.botui-actions-buttons-button {
     padding-top:11px;
     text-decoration-line:none
 }
-.logolink.moe-mashiro .sakurasono {
+.logolink.moe-mashiro .sakuraso, .logolink.moe-mashiro .no {
     font-size:25px;
     border-radius:9px;
     padding-bottom:2px;
