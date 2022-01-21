@@ -44,23 +44,24 @@ homePageSortType: -1
 homeArticleShown: 10
 # 背景图片 更好的修改
 bg:
-  - https://gitee.com/ljv0606/cdn/raw/master/img/0.webp
-  - https://gitee.com/ljv0606/cdn/raw/master/img/1.webp
-  - https://gitee.com/ljv0606/cdn/raw/master/img/2.webp
-  - https://gitee.com/ljv0606/cdn/raw/master/img/3.webp
-  - https://gitee.com/ljv0606/cdn/raw/master/img/4.webp
-  - https://gitee.com/ljv0606/cdn/raw/master/img/5.webp
-  - https://gitee.com/ljv0606/cdn/raw/master/img/6.webp
-  - https://gitee.com/ljv0606/cdn/raw/master/img/7.webp
+  - https://gitee.com/ljv0606/cdn/raw/master/img/f0.webp
+  - https://gitee.com/ljv0606/cdn/raw/master/img/f1.webp
+  - https://gitee.com/ljv0606/cdn/raw/master/img/f2.webp
+  - https://gitee.com/ljv0606/cdn/raw/master/img/f3.webp
+  - https://gitee.com/ljv0606/cdn/raw/master/img/f4.webp
+  - https://gitee.com/ljv0606/cdn/raw/master/img/f5.webp
+  - https://gitee.com/ljv0606/cdn/raw/master/img/f6.webp
+  - https://gitee.com/ljv0606/cdn/raw/master/img/f7.webp
+  - https://gitee.com/ljv0606/cdn/raw/master/img/f8.webp
 
 # 背景图片样式 空 原图效果 filter-dim 阴影 filter-grid 横条 filter-dot 点点
 bgclass: 
 
 # startdash url, title, desc img
 startdash: 
-  - {url: /categories/生活/, title: My Life, desc: 生活小记, img: /img/w1.webp}
-  - {url: https://github.com/acdefg, title: My Github, desc: 本菜鸡的Github, img: /img/w2.webp}
-  - {url: /categories/技术/, title: 学习笔记, desc: 记录一下小菜的学习过程, img: /img/w3.webp}
+  - {url: /categories/生活/, title: My Life, desc: 生活小记, img: /img/0.webp}
+  - {url: https://github.com/acdefg, title: My Github, desc: 本菜鸡的Github, img: /img/1.webp}
+  - {url: /categories/技术/, title: 学习笔记, desc: 记录一下小菜的学习过程, img: /img/2.webp}
 
 
 # your site build time or founded date
@@ -77,13 +78,11 @@ msocial:
   github: {url: https://github.com/acdefg, fa: fa-github, color: 333}
   gitee: {url: https://gitee.com/ljv0606, fa: fa-git, color: dd4b39}
 
-
-
 # 视频地址为https://cdn.jsdelivr.net/gh/honjun/hojun@1.2/Unbroken.mp4，配置如下
 movies:
-  url: https://gitee.com/ljv0606/cdn/raw/master
+  url: 
   # 多个视频用逗号隔开，随机获取。支持的格式目前已知MP4,Flv。其他的可以试下，不保证有用
-  name: yanshi.mp4
+  name: 
   
 aplayer: 
   id: 2722953071
@@ -101,6 +100,7 @@ aplayer:
 valine: true
 v_appId: ySRMleyxDW43TSYlnWifvx99-gzGzoHsz
 v_appKey: yn6scDoqTa50RWa6QSgcIA38
+v_verify: true 
 
 # Waline
 waline:
