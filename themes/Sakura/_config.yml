@@ -2,7 +2,7 @@
 prefixName: Cici's
 siteName: blog~
 # favicon and site master avatar
-favicon: /img/favicon.webp
+favicon: /img/favicon.ico
 avatar: /img/avatar.webp
 url: https://ljc0606.top
 description: Life is just about enjoying living.
@@ -19,8 +19,8 @@ menus:
   归档: { path: /archives, fa: fa-archive faa-shake, submenus: { 
     技术: {path: /categories/技术/, fa: fa-code }, 
     生活: {path: /categories/生活/, fa: fa-file-text-o }, 
-    资源: {path: /categories/资源/, fa: fa-cloud-download }, 
-    随想: {path: /categories/随想/, fa: fa-commenting-o },
+    搞事情: {path: /categories/搞事情/, fa: fa-cloud-download }, 
+    正经学: {path: /categories/正经学/, fa: fa-commenting-o },
     转载: {path: /categories/转载/, fa: fa-book }
   } }
   清单: { path: javascript:;, fa: fa-list-ul faa-vertical, submenus: { 
@@ -30,13 +30,11 @@ menus:
     图集: {path: /tags/图集/, fa: fa-photo }
   } }
   留言板: { path: /comment/, fa: fa-pencil-square-o faa-tada }
-  友人帐: { path: /links/, fa: fa-link faa-shake }
+  参考集: { path: /links/, fa: fa-link faa-shake }
   关于: { path: /, fa: fa-leaf faa-wrench , submenus: { 
     我？: {path: /about/, fa: fa-meetup}, 
-    主题: {path: /theme-sakura/, fa: iconfont icon-sakura },
     Lab: {path: /lab/, fa: fa-cogs },
   } }
-  客户端: { path: /client/, fa: fa-android faa-vertical }
   RSS: { path: /atom.xml, fa: fa-rss faa-pulse }
 
 
