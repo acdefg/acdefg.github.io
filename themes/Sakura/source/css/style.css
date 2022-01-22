@@ -7864,3 +7864,6 @@ td.hljs-ln-numbers {
     .toc {display: none;}
 }
 
+.mermaid {
+    background: transparent;
+}
