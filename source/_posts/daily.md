@@ -25,7 +25,6 @@ photos: https://gitee.com/ljv0606/cdn/raw/master/img/b5.webp
 
 ### fixable tasks
 
-
 ```mermaid
 gantt 
 title Daily routine 

@@ -22,5 +22,18 @@
   </section>
   <%- partial('_partial/mheader', null, {cache: !config.relative_link}) %>
   <%- partial('_partial/aplayer', null, {cache: !config.relative_link}) %>
+  
+  <!--mermaid,dark.defalut,neutral,forest-->
+  <% if (theme.mermaid.enable) { %>
+    <!--<script src='https://cdn.jsdelivr.net/gh/acdefg/cdn/modules/mermaid/mermaid.min.js'></script>-->
+    <!-- <script src='https://unpkg.com/mermaid@<%= theme.mermaid.version %>/dist/mermaid.min.js'></script> -->
+    <script src='<%- theme.libs_url %><%- url_for(theme.libs.mermaid.js) %>'></script>
+    <script>
+      if (window.mermaid) {
+        mermaid.initialize({theme: 'neutral'});
+      }
+    </script>
+<% } %>
+
 </body>
 </html>

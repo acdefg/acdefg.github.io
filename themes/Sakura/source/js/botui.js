@@ -22,23 +22,23 @@ function bot_ui_ini() {
     var botui = new BotUI("hello-mashiro")
     botui.message.add({
         delay: 800,
-        content: "Hi, there👋"
+        content: "Hi, 很高兴你来到这里👋"
     }).then(function () {
         botui.message.add({
-            delay: 1100,
-            content: "这里是 Mashiro"
+            delay: 1000,
+            content: "这里是 Cici"
         }).then(function () {
             botui.message.add({
-                delay: 1100,
-                content: "一个可爱的蓝孩子~"
+                delay: 1000,
+                content: "是一个正在努力学习新技能的小菜鸡~"
             }).then(function () {
                 botui.action.button({
                     delay: 1600,
                     action: [{
-                        text: "然后呢？ 😃",
+                        text: "还有呢？ 😃",
                         value: "sure"
                     }, {
-                        text: "少废话！ 🙄",
+                        text: "简单点！ 🙄",
                         value: "skip"
                     }]
                 }).then(function (a) {
@@ -59,96 +59,129 @@ function bot_ui_ini() {
         end = function () {
             botui.message.add({
                 delay: 600,
-                content: "![...](https://view.moezx.cc/images/2018/05/06/a1c4cd0452528b572af37952489372b6.md.jpg)"
+                content: "![...](https://gitee.com/ljv0606/cdn/raw/master/img/20220122160129.png)"
             })
         },
         secondpart = function () {
             botui.message.add({
-                delay: 1500,
-                content: "目前就读于上海财经大学"
+                delay: 1000,
+                content: "我本科学的是电气工程及其自动化"
             }).then(function () {
                 botui.message.add({
-                    delay: 1500,
-                    content: "向往技术却误入商科，但后来喜欢上了经济学…"
+                    delay: 1200,
+                    content: "虽然学的是电气，但是业余很喜欢整活…"
                 }).then(function () {
                     botui.message.add({
                         delay: 1200,
-                        content: "因为数据分析也需要Coder嘛"
+                        content: "业余爱好就比较广啦，大体上来说，平时喜欢写点小程序，拍些小照片，画一些小图片"
                     }).then(function () {
                         botui.message.add({
-                            delay: 1500,
-                            content: "主攻 R 语言和 Python，略懂 STATA，偶尔也折腾 HTML/CSS/JavaScript/PHP"
+                            delay: 1200,
+                            content: "虽然经常成效不咋地，但是人菜瘾大了"
                         }).then(function () {
                             botui.message.add({
                                 delay: 1500,
-                                content: "研究的方向，是经济/金融方向的数据分析（data science）以及机器学习（machine learning）"
+                                content: "经常看到好玩的实践项目，就会手痒"
                             }).then(function () {
-                                botui.message.add({
-                                    delay: 1800,
-                                    content: "喜欢画画，希望有一天能够被称为画师"
-                                }).then(function () {
-                                    botui.action.button({
-                                        delay: 1100,
-                                        action: [{
-                                            text: "为什么叫Mashiro呢？ 🤔",
-                                            value: "why-mashiro"
-                                        }]
-                                    }).then(function (a) {
-                                        thirdpart()
-                                    })
+                                botui.action.button({
+                                    delay: 1100,
+                                    action: [{
+                                        text: "怎么会做这个博客🤔",
+                                        value: "why-blog"
+                                    },
+                                    {
+                                        text: "为什么不更新了🤨",
+                                        value: "why-not-update"
+                                    }]
+                                }).then(function (a) {
+                                    "why-blog" == a.value && blog();
+                                    "why-not-update" == a.value && update()
                                 })
                             })
                         })
+                    
                     })
                 })
             })
         },
-        thirdpart = function () {
+        blog = function () {
             botui.message.add({
                 delay: 1E3,
-                content: "Mashiro以及站名都来自一部动画，因为和主角有一样的爱好~ 如果有兴趣可以找找首页上的视频~"
+                content: "看到了原作者以及几位相同主题的大佬的博客"
+            }).then(function(){
+                botui.message.add({
+                    delay: 1E3,
+                    content: "好看得正合我意，就想搭一个自己的"
+                })
             }).then(function () {
                 botui.action.button({
                     delay: 1500,
                     action: [{
-                        text: "为什么是白猫呢？ 🤔",
-                        value: "why-cat"
+                        text: "咋做的这么好看呢？o(*^▽^*)┛",
+                        value: "why-good"
+                    },
+                    {
+                        text: "为什么做的这么烂呢？ (。・・)ノ",
+                        value: "why-cai"   
                     }]
                 }).then(function (a) {
-                    fourthpart()
+                    "why-cai" == a.value && cai();
+                    "why-good" == a.value && good()
                 })
             })
         },
-        fourthpart = function () {
+        update = function () {
             botui.message.add({
                 delay: 1E3,
-                content: "因为对GitHub有种执念… "
+                content: "因为忙于学习无法自拔… "
             }).then(function () {
                 botui.message.add({
                     delay: 1100,
-                    content: "而且我真的是猫控！"
+                    content: "这个博客是我寒假无聊的时候做的"
                 }).then(function () {
-                    botui.action.button({
-                        delay: 1500,
-                        action: [{
-                            text: "域名有什么含意吗？(ง •_•)ง",
-                            value: "why-domain"
-                        }]
-                    }).then(function (a) {
-                        fifthpart()
+                    botui.message.add({
+                        delay: 1100,
+                        content: "有很多板块都不完善"
+                    }).then(function(){
+                        botui.message.add({
+                            delay: 1000,
+                            content: "后期太忙（懒）的话，可能就更一下文章内容，当然可能文章也不会更"
+                        })
+
                     })
                 })
             })
         },
-        fifthpart = function () {
+        cai = function () {
             botui.message.add({
-                delay: 1E3,
-                content: "emmmm，看备案信息你就知道了=.= 本来想要zheng.xin的，但50万真买不起。。"
+                delay: 1800,
+                content: "哼（｀へ´），不然怎么叫小菜鸡呢"
             }).then(function () {
                 botui.message.add({
-                    delay: 1600,
-                    content: "那么，仔细看看我的博客吧？ ^_^"
+                    delay: 1500,
+                    content: "其实这里你能看到的大部分样式都是原作者提供的"
+                }).then(function () {
+                    botui.message.add({
+                        delay: 1100,
+                        content: "然后被我改的乱七八糟"
+                    })
                 })
             })
-        } 
+        },
+        good = function () {
+            botui.message.add({
+                delay: 1E3,
+                content: "hhhh，这可是我做了好几天才捣鼓出来的东西"
+            }).then(function () {
+                botui.message.add({
+                    delay: 1200,
+                    content: "主要还是原博主大大做的好看"
+                }).then(function () {
+                botui.message.add({
+                    delay: 1200,
+                    content: "那么，仔细看看我的博客吧？ ^_^"
+                    })
+                })
+            })
+        }  
 }

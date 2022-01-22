@@ -1,6 +1,6 @@
 # site name
 prefixName: Cici's
-siteName: blog~
+siteName: blog
 # favicon and site master avatar
 favicon: /img/favicon.ico
 avatar: /img/avatar.webp
@@ -11,7 +11,7 @@ pjax: 1
 # 1开启
 mathjax: 0
 
-notice: 
+notice: 小破站自用维护中，最近比较懒，很多功能不完善，暂时就这样吧
 lazyloadImg: https://gitee.com/ljv0606/cdn/raw/master/img/loading.gif
 
 menus:
@@ -111,3 +111,16 @@ waline:
   placeholder: 祝开开心心！ # Comment Box placeholder
   requiredFields: [ 'nick','mail' ] #设置必填项
   background: https://gitee.com/cungudafa/source/raw/master/img/gif/Sitich/Sitich2.gif #输入框提示动画
+
+# mermaid chart layout.ejs
+mermaid: ## mermaid url https://github.com/webappdevelp/hexo-filter-mermaid-diagrams
+  enable: true  # default true
+  version: "7.1.2" # default v7.1.2
+  options:  # find more api options from https://github.com/knsv/mermaid/blob/master/src/mermaidAPI.js
+    #startOnload: true  // default true
+
+libs_url: https://cdn.jsdelivr.net/gh/acdefg/cdn/modules
+
+libs: 
+  mermaid: 
+    js: /mermaid/mermaid.min.js

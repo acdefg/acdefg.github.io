@@ -5,7 +5,7 @@ avatar: https://gitee.com/ljv0606/cdn/raw/master/img/头像1.jpg
 authorLink: /about
 authorAbout: 小菜本菜
 authorDesc: 小菜本菜
-categories: 技术
+categories: 博客
 comments: true
 date: 2022-01-20 12:08:05
 tags: issue

@@ -36,3 +36,8 @@ github+Pico+jsdelivr：https://zhuanlan.zhihu.com/p/350598351
 github图床地址：https://cdn.jsdelivr.net/gh/acdefg/cdn
 
 作为图床的仓库最好不能超过 1G，因为仓库超过 1G 后会有人工审核仓库内容。一旦发现用于图床可能会被删库也可能会被封号！！！所以建议在 1G 之前就换个仓库
+
+#### 表情
+github的markdown支持的emoji：https://gist.github.com/rxaviers/7360908
+言文字：https://www.fuhaozi.cn/yanwenzi/
+emoji表情：http://emojixd.com/group/smileys-emotion#h-face-neutral-skeptical

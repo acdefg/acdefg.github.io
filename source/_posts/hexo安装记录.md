@@ -1,5 +1,5 @@
 ---
-title: hexo安装记录
+title: Hexo安装记录
 author: Cici
 avatar: https://gitee.com/ljv0606/cdn/raw/master/img/表情1.jpg
 authorLink: /about
@@ -159,8 +159,13 @@ npm install --save hexo@5.0.0
 #### 标题那里的动态特效
 
 这个特效我看大佬原博客上面有,但是大佬发的这个hexo主题下载下来并没有，我又基本上没有接触过前端代码，但是呜呜呜真的很想要，所以就只能硬刚了<br>
+![左上角logo](https://gitee.com/ljv0606/cdn/raw/master/mdimg/blogicon.png)
+
+{% fb_img https://gitee.com/ljv0606/cdn/raw/master/mdimg/blogicon.png logo图 %}
+
 首先打开大佬博客的网站源码，然后再baidu一下代码，这样这样，那样那样，就成了<br>
 先把元素的定义加上在header.ejs里，这是改后的代码，改前的的没了，按没改的地方搜一下就好了
+
 ```
     <div class="site-branding">
       <span class="site-title">

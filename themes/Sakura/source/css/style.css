@@ -3965,7 +3965,8 @@ li.feature-2 {
     width: 100%;
     z-index: 0;
 }
-}.blank {
+}
+.blank {
     padding-top:80px;
     background-color:rgba(255,255,255,1)
 }
@@ -7862,3 +7863,4 @@ td.hljs-ln-numbers {
 @media(max-width:1200px) {
     .toc {display: none;}
 }
+
