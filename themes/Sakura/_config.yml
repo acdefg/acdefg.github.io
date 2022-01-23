@@ -67,7 +67,7 @@ siteBuildingTime: 01/20/2022
 #social  url, img PC端配置
 social:
   github: {url: https://github.com/acdefg, img: /img/gitup.png}
-  ljv0606@outlook.com: {url: /#, img: /img/email.jpg}
+  mail: {url: mailto:ljv0606@outlook.com, img: /img/email.jpg}
   gitee: {url: https://gitee.com/ljv0606, img: /img/gitee.jpg}
 
 #social  url, img 移动端配置
