@@ -11,7 +11,7 @@ date: 2022-01-20 12:08:05
 tags: issue
 keywords: julp | hexo
 description: 安装julp网上的教程编译错误
-photos: https://gitee.com/ljv0606/cdn/raw/master/img/b6.webp
+photos: https://gitee.com/ljv0606/cdn/raw/master/img/f6.webp
 ---
 ## 一些坑
 ### 记录一些记下来的

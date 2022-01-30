@@ -11,7 +11,7 @@ date: 2022-01-20 13:00:28
 tags: note
 keywords:
 description: 存一些不常见用法和引用
-photos: https://gitee.com/ljv0606/cdn/raw/master/img/b3.webp
+photos: https://gitee.com/ljv0606/cdn/raw/master/img/f3.webp
 ---
 
 #### 图片引用格式

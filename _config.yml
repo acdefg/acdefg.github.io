@@ -106,3 +106,27 @@ feed:
   content_limit: 140
   content_limit_delim: ' '
   order_by: -date
+
+#https://github.com/EYHN/hexo-helper-live2d/blob/HEAD/README.zh-CN.md
+#https://github.com/summerscar/live2dDemo
+# live2d:
+#   enable: true
+#   scriptFrom: local
+#   pluginRootPath: live2d_models/
+#   pluginJsPath: lib/
+#   pluginModelPath: assets/
+#   tagMode: false
+#   debug: false
+#   model:
+#     use: https://cdn.jsdelivr.net/gh/acdefg/live2dDemo/assets/kesyoban/model.json
+#   display:
+#     superSample: 2
+#     width: 200
+#     height: 400
+#     position: left
+#     hOffset: -30
+#     vOffset: -60
+#   mobile:
+#     show: true
+#   react:
+#     opacity: 1

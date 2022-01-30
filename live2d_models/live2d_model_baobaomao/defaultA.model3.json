@@ -1,0 +1,18 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "defaultA.moc3",
+		"Textures": [
+			"defaultA.4096/texture_00.png"
+		],
+		"Physics": "defaultA.physics3.json",
+		"DisplayInfo": "defaultA.cdi3.json"
+	},
+	"Groups": [
+		{
+			"Target": "Parameter",
+			"Name": "EyeBlink",
+			"Ids": []
+		}
+	]
+}

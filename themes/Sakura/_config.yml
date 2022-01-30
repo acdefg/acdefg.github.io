@@ -41,15 +41,15 @@ homePageSortType: -1
 homeArticleShown: 10
 # 背景图片 更好的修改
 bg:
-  - https://gitee.com/ljv0606/cdn/raw/master/img/f0.webp
-  - https://gitee.com/ljv0606/cdn/raw/master/img/f1.webp
-  - https://gitee.com/ljv0606/cdn/raw/master/img/f2.webp
-  - https://gitee.com/ljv0606/cdn/raw/master/img/f3.webp
-  - https://gitee.com/ljv0606/cdn/raw/master/img/f4.webp
-  - https://gitee.com/ljv0606/cdn/raw/master/img/f5.webp
-  - https://gitee.com/ljv0606/cdn/raw/master/img/f6.webp
-  - https://gitee.com/ljv0606/cdn/raw/master/img/f7.webp
-  - https://gitee.com/ljv0606/cdn/raw/master/img/f8.webp
+  - https://gitee.com/ljv0606/cdn/raw/master/img/b0.webp
+  - https://gitee.com/ljv0606/cdn/raw/master/img/b1.webp
+  - https://gitee.com/ljv0606/cdn/raw/master/img/b2.webp
+  - https://gitee.com/ljv0606/cdn/raw/master/img/b3.webp
+  - https://gitee.com/ljv0606/cdn/raw/master/img/b4.webp
+  - https://gitee.com/ljv0606/cdn/raw/master/img/b5.webp
+  - https://gitee.com/ljv0606/cdn/raw/master/img/b6.webp
+  - https://gitee.com/ljv0606/cdn/raw/master/img/b7.webp
+  - https://gitee.com/ljv0606/cdn/raw/master/img/b8.webp
 
 # 背景图片样式 空 原图效果 filter-dim 阴影 filter-grid 横条 filter-dot 点点
 bgclass: 

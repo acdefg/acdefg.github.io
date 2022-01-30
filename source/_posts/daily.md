@@ -11,16 +11,26 @@ date: 2022-01-20 12:08:05
 tags: plan
 keywords: julp | hexo
 description: 给快要结束的寒假做个小计划
-photos: https://gitee.com/ljv0606/cdn/raw/master/img/b5.webp
+photos: https://gitee.com/ljv0606/cdn/raw/master/img/f5.webp
 ---
+
+
+
+## Reference
+
+集成电路工程专业需要哪些方面的知识？
+
+- https://www.zhihu.com/collection/692953676（书多）
+
+- (https://www.zhihu.com/question/50998132/answer/123672184)（课多）
 
 ## Daily tasks
 
 ### fixed tasks
 
 - [ ] [英语口语练习](#英语口语)
-- [ ] [半导体物理学习](#半导体物理/模电)
-- [ ] [模拟电子学习](#半导体物理/模电)
+- [ ] [半导体物理学习](#半导体物理)
+- [ ] [模拟电子学习](#模拟电子技术)
 - [ ] [verilog 编程（FPGA）](#verilog)
 
 ### fixable tasks
@@ -50,12 +60,23 @@ fixable tasks: 19:00,1h
 - [ ] 面试内容准备
 - [ ] 专业词汇准备
 
-### 半导体物理/模电
+### 半导体物理/模电/数电
 
-- [ ] 理解内容
-- [ ] 记住记录重要原理
-- [ ] 标记课本
-- [ ] 温故知新
+- 理解内容
+
+- 记住记录重要原理
+
+- 标记课本
+
+- 温故知新
+
+#### 半导体物理
+
+##### 教程
+
+1、cousera：https://www.coursera.org/learn/semiconductor-physics/home/welcome
+
+#### 模拟电子技术
 
 ### verilog
 
@@ -63,3 +84,15 @@ fixable tasks: 19:00,1h
 - [ ] 去年面试题  若干
 - [ ] blog记录
 - [ ] 自己设计硬件电路
+
+#### 教程
+
+1. 菜鸟教程：https://www.runoob.com/w3cnote/verilog-tutorial.html
+2. bilibili视频课： https://www.bilibili.com/video/BV1Dx411e7Af
+3. 刷题网站：https://hdlbits.01xz.net/wiki/Step_one
+
+#### 主要练习项目
+
+1. FPGA板
+2. 跟一本书或者视频课的练习（推荐）
+3. 面试题（时间紧）
