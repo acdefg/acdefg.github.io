@@ -58,7 +58,7 @@ bgclass:
 startdash: 
   - {url: /categories/生活/, title: My Life, desc: 生活小记, img: /img/0.webp}
   - {url: https://github.com/acdefg, title: My Github, desc: 本菜鸡的Github, img: /img/1.webp}
-  - {url: /categories/技术/, title: 学习笔记, desc: 记录一下小菜的学习过程, img: /img/2.webp}
+  - {url: /categories/学习/, title: 学习笔记, desc: 记录一下小菜的学习过程, img: /img/2.webp}
 
 
 # your site build time or founded date

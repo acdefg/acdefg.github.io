@@ -1,5 +1,6 @@
 ---
 title: 日计划
+date: {{ date }}
 author: Cici
 avatar: https://gitee.com/ljv0606/cdn/raw/master/img/头像1.jpg
 authorLink: /about
@@ -7,7 +8,6 @@ authorAbout: 小菜本菜
 authorDesc: 小菜本菜
 categories: 学习
 comments: true
-date: 2022-01-20 12:08:05
 tags: plan
 keywords: julp | hexo
 description: 给快要结束的寒假做个小计划
@@ -77,6 +77,10 @@ fixable tasks: 19:00,1h
 1、cousera：https://www.coursera.org/learn/semiconductor-physics/home/welcome
 
 #### 模拟电子技术
+
+##### 课程
+
+1、bilibili：https://www.bilibili.com/video/BV1Vp411f71S?p=10
 
 ### verilog
 
