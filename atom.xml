@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>BLOG</title>
+  
+  <subtitle>Welcome</subtitle>
+  <link href="http://acdefg.github.io/atom.xml" rel="self"/>
+  
+  <link href="http://acdefg.github.io/"/>
+  <updated>2022-11-11T03:43:12.096Z</updated>
+  <id>http://acdefg.github.io/</id>
+  
+  <author>
+    <name>Cici</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>内核裁剪步骤</title>
+    <link href="http://acdefg.github.io/%E5%AD%A6%E4%B9%A0/%E5%86%85%E6%A0%B8%E8%A3%81%E5%89%AA%E6%AD%A5%E9%AA%A4/"/>
+    <id>http://acdefg.github.io/%E5%AD%A6%E4%B9%A0/%E5%86%85%E6%A0%B8%E8%A3%81%E5%89%AA%E6%AD%A5%E9%AA%A4/</id>
+    <published>2022-11-11T02:56:18.000Z</published>
+    <updated>2022-11-11T03:43:12.096Z</updated>
+    
+    
+    <summary type="html">环境安装按顺序跑</summary>
+    
+    
+    
+    <category term="学习" scheme="http://acdefg.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="note" scheme="http://acdefg.github.io/tags/note/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>内核裁剪log</title>
+    <link href="http://acdefg.github.io/%E5%AD%A6%E4%B9%A0/%E5%86%85%E6%A0%B8%E8%A3%81%E5%89%AAlog/"/>
+    <id>http://acdefg.github.io/%E5%AD%A6%E4%B9%A0/%E5%86%85%E6%A0%B8%E8%A3%81%E5%89%AAlog/</id>
+    <published>2022-11-11T02:55:50.000Z</published>
+    <updated>2022-11-11T03:16:03.729Z</updated>
+    
+    
+    <summary type="html">记录截图</summary>
+    
+    
+    
+    <category term="学习" scheme="http://acdefg.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="note" scheme="http://acdefg.github.io/tags/note/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://acdefg.github.io/uncategorized/hello-world/"/>
+    <id>http://acdefg.github.io/uncategorized/hello-world/</id>
+    <published>2022-10-04T07:39:48.558Z</published>
+    <updated>2022-10-04T07:39:48.558Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>日计划</title>
+    <link href="http://acdefg.github.io/%E5%AD%A6%E4%B9%A0/2022-2-5/"/>
+    <id>http://acdefg.github.io/%E5%AD%A6%E4%B9%A0/2022-2-5/</id>
+    <published>2022-02-05T04:57:09.000Z</published>
+    <updated>2022-11-11T02:54:35.953Z</updated>
+    
+    
+    <summary type="html">给快要结束的寒假做个小计划</summary>
+    
+    
+    
+    <category term="学习" scheme="http://acdefg.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="plan" scheme="http://acdefg.github.io/tags/plan/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ubuntu指令收集</title>
+    <link href="http://acdefg.github.io/%E6%8A%80%E6%9C%AF/ubuntu%E6%8C%87%E4%BB%A4%E6%94%B6%E9%9B%86/"/>
+    <id>http://acdefg.github.io/%E6%8A%80%E6%9C%AF/ubuntu%E6%8C%87%E4%BB%A4%E6%94%B6%E9%9B%86/</id>
+    <published>2022-01-30T05:24:25.000Z</published>
+    <updated>2022-10-04T07:53:46.907Z</updated>
+    
+    
+    <summary type="html">收集一些使用ubuntu的指令</summary>
+    
+    
+    
+    <category term="技术" scheme="http://acdefg.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="note" scheme="http://acdefg.github.io/tags/note/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ubuntu20.04美化</title>
+    <link href="http://acdefg.github.io/%E6%8A%80%E6%9C%AF/ubuntu20-04%E7%BE%8E%E5%8C%96/"/>
+    <id>http://acdefg.github.io/%E6%8A%80%E6%9C%AF/ubuntu20-04%E7%BE%8E%E5%8C%96/</id>
+    <published>2022-01-24T09:47:13.000Z</published>
+    <updated>2022-10-04T07:53:46.907Z</updated>
+    
+    
+    <summary type="html">做一些ubuntu20.04系统的简单美化</summary>
+    
+    
+    
+    <category term="技术" scheme="http://acdefg.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="issue" scheme="http://acdefg.github.io/tags/issue/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>博客搭建更新记录</title>
+    <link href="http://acdefg.github.io/%E5%8D%9A%E5%AE%A2/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%9B%B4%E6%96%B0%E8%AE%B0%E5%BD%95/"/>
+    <id>http://acdefg.github.io/%E5%8D%9A%E5%AE%A2/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%9B%B4%E6%96%B0%E8%AE%B0%E5%BD%95/</id>
+    <published>2022-01-22T09:28:29.000Z</published>
+    <updated>2022-10-04T07:53:46.907Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;更新记录&quot;&gt;&lt;a href=&quot;#更新记录&quot; class=&quot;headerlink&quot; title=&quot;更新记录&quot;&gt;&lt;/a&gt;更新记录&lt;/h3&gt;&lt;h4 id=&quot;about页更新&quot;&gt;&lt;a href=&quot;#about页更新&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="博客" scheme="http://acdefg.github.io/categories/%E5%8D%9A%E5%AE%A2/"/>
+    
+    
+    <category term="web" scheme="http://acdefg.github.io/tags/web/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>markdown一些语法记录</title>
+    <link href="http://acdefg.github.io/%E6%8A%80%E6%9C%AF/markdown%E4%B8%80%E4%BA%9B%E8%AF%AD%E6%B3%95%E8%AE%B0%E5%BD%95/"/>
+    <id>http://acdefg.github.io/%E6%8A%80%E6%9C%AF/markdown%E4%B8%80%E4%BA%9B%E8%AF%AD%E6%B3%95%E8%AE%B0%E5%BD%95/</id>
+    <published>2022-01-20T05:00:28.000Z</published>
+    <updated>2022-10-04T07:53:46.907Z</updated>
+    
+    
+    <summary type="html">存一些不常见用法和引用</summary>
+    
+    
+    
+    <category term="技术" scheme="http://acdefg.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="note" scheme="http://acdefg.github.io/tags/note/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo安装记录</title>
+    <link href="http://acdefg.github.io/%E5%8D%9A%E5%AE%A2/hexo%E5%AE%89%E8%A3%85%E8%AE%B0%E5%BD%95/"/>
+    <id>http://acdefg.github.io/%E5%8D%9A%E5%AE%A2/hexo%E5%AE%89%E8%A3%85%E8%AE%B0%E5%BD%95/</id>
+    <published>2022-01-20T04:08:05.000Z</published>
+    <updated>2022-10-04T07:53:46.907Z</updated>
+    
+    
+    <summary type="html">hexo中sakura主题安装</summary>
+    
+    
+    
+    <category term="博客" scheme="http://acdefg.github.io/categories/%E5%8D%9A%E5%AE%A2/"/>
+    
+    
+    <category term="web" scheme="http://acdefg.github.io/tags/web/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>安装julp的一些坑</title>
+    <link href="http://acdefg.github.io/%E5%8D%9A%E5%AE%A2/%E5%AE%89%E8%A3%85julp%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9D%91/"/>
+    <id>http://acdefg.github.io/%E5%8D%9A%E5%AE%A2/%E5%AE%89%E8%A3%85julp%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9D%91/</id>
+    <published>2022-01-20T04:08:05.000Z</published>
+    <updated>2022-10-04T07:53:46.911Z</updated>
+    
+    
+    <summary type="html">安装julp网上的教程编译错误</summary>
+    
+    
+    
+    <category term="博客" scheme="http://acdefg.github.io/categories/%E5%8D%9A%E5%AE%A2/"/>
+    
+    
+    <category term="issue" scheme="http://acdefg.github.io/tags/issue/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo-Theme-Sakura</title>
+    <link href="http://acdefg.github.io/%E6%8A%80%E6%9C%AF/Hexo-Theme-Sakura/"/>
+    <id>http://acdefg.github.io/%E6%8A%80%E6%9C%AF/Hexo-Theme-Sakura/</id>
+    <published>2018-12-12T14:16:01.000Z</published>
+    <updated>2022-10-04T07:53:46.907Z</updated>
+    
+    
+    <summary type="html">hexo-sakura主题使用教程</summary>
+    
+    
+    
+    <category term="技术" scheme="http://acdefg.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="web" scheme="http://acdefg.github.io/tags/web/"/>
+    
+  </entry>
+  
+</feed>

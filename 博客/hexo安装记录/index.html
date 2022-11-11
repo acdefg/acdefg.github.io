@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+  
+  <title itemprop="name">Hexo安装记录 | BLOG</title>
+  
+    <link rel="shortcut icon" href="https://gitee.com/ljv0606/cdn/raw/master/img/favicon.ico">
+  
+  <meta http-equiv="x-dns-prefetch-control" content="on">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+SerifMerriweather|Merriweather+Sans|Source+Code+Pro|Ubuntu:400,700|Noto+Serif+SC" media="all">
+  <link rel="dns-prefetch" href="//cdn.jsdelivr.net">
+  <link rel="stylesheet" id="saukra_css-css" href="/css/style.css" type="text/css" media="all">
+  <link rel="stylesheet" href="/css/lib.min.css" media="all">
+  <link rel="stylesheet" href="/css/font.css" media="all">
+  <link rel="stylesheet" href="/css/insight.css" media="all">
+  <link rel="stylesheet" href="/css/jquery.fancybox.min.css" media="all">
+  <link rel="stylesheet" href="/css/zoom.css" media="all">
+  <link rel="stylesheet" type="text/css" href="/css/sharejs.css">
+<!--   <link rel="stylesheet" id="saukra_css-css" href="https://2heng.xin/wp-content/cache/autoptimize/css/autoptimize_ad42a61f4c7d4bdd9f91afcff6b5dda5.css
+" type="text/css" media="all"> -->
+  <script>
+  /*Initial Variables*/
+  var mashiro_option = new Object();
+  var mashiro_global = new Object();
+  mashiro_option.NProgressON = true;
+  /* 
+   * 邮箱信息之类的东西可以填在这里，这些js变量基本都作用于sakura-app.js
+   * 这样的设置仅是为了方便在基于PHP开发的主题中设置js变量，既然移植到了Node上，我想或许可以精简这一逻辑吧
+   */
+  mashiro_option.email_domain = "";
+  mashiro_option.email_name = "";
+  mashiro_option.cookie_version_control = "";
+  mashiro_option.qzone_autocomplete = false;
+  mashiro_option.site_name = "Cici'sblog";
+  mashiro_option.author_name = "blog";
+  mashiro_option.site_url = "https://ljc0606.top";
+  mashiro_option.v_appId = "ySRMleyxDW43TSYlnWifvx99-gzGzoHsz";
+  mashiro_option.v_appKey = "yn6scDoqTa50RWa6QSgcIA38";
+  mashiro_option.mathjax = "0";
+  mashiro_option.qq_api_url = "https://api.mashiro.top/qqinfo/"; 
+  mashiro_option.qq_avatar_api_url = "https://api.mashiro.top/qqinfo/";
+
+  // mashiro_option.jsdelivr_css_src = "https://cdn.jsdelivr.net/gh/moezx/cdn@3.4.5/css/lib.min.css";
+  // mashiro_option.float_player_on = true;
+
+  /*End of Initial Variables*/
+  </script>
+  <script type="text/javascript">
+  var bg = "https://gitee.com/ljv0606/cdn/raw/master/img/b0.webp,https://gitee.com/ljv0606/cdn/raw/master/img/b1.webp,https://gitee.com/ljv0606/cdn/raw/master/img/b2.webp,https://gitee.com/ljv0606/cdn/raw/master/img/b3.webp,https://gitee.com/ljv0606/cdn/raw/master/img/b4.webp,https://gitee.com/ljv0606/cdn/raw/master/img/b5.webp,https://gitee.com/ljv0606/cdn/raw/master/img/b6.webp,https://gitee.com/ljv0606/cdn/raw/master/img/b7.webp,https://gitee.com/ljv0606/cdn/raw/master/img/b8.webp".split(",");
+  var bgindex = Math.floor(Math.random()*bg.length);
+  if (!!window.ActiveXObject || "ActiveXObject" in window) { //is IE?
+    alert('朋友，IE浏览器未适配哦~');
+  }
+  </script>
+  
+  <style type="text/css">
+  .hljs-ln{border-collapse:collapse}.hljs-ln td{padding:0}.hljs-ln-n:before{content:attr(data-line-number)}
+  </style>
+
+  <style type="text/css">.site-top .lower nav{display:block !important;}.author-profile i,.post-like a,.post-share .show-share,.sub-text,.we-info a,span.sitename,.post-more i:hover,#pagination a:hover,.post-content a:hover,.float-content i:hover{color:#FE9600}.feature i,.download,.navigator i:hover,.links ul li:before,.ar-time i,span.ar-circle,.object,.comment .comment-reply-link,.siren-checkbox-radio:checked + .siren-checkbox-radioInput:after{background:#FE9600}::-webkit-scrollbar-thumb{background:#FE9600}.download,.navigator i:hover,.link-title,.links ul li:hover,#pagination a:hover,.comment-respond input[type='submit']:hover{border-color:#FE9600}.entry-content a:hover,.site-info a:hover,.comment h4 a,#comments-navi a.prev,#comments-navi a.next,.comment h4 a:hover,.site-top ul li a:hover,.entry-title a:hover,#archives-temp h3,span.page-numbers.current,.sorry li a:hover,.site-title a:hover,i.iconfont.js-toggle-search.iconsearch:hover,.comment-respond input[type='submit']:hover{color:#FE9600}.comments .comments-main{display:block !important;}.comments .comments-hidden{display:none !important; background-position: center center; background-attachment: inherit;}
+  </style>
+
+  <script src="https://cdn.jsdelivr.net/gh/acdefg/live2d-widget@latest/autoload.js"></script>
+<meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="BLOG" type="application/atom+xml">
+</head>
+
+<body class="page-template page-template-user page-template-page-analytics page-template-userpage-analytics-php page page-id-1297 chinese-font serif isWebKit">
+  <div class="scrollbar" id="bar">
+  </div>
+  <a href="#" class="cd-top faa-float animated"></a>
+  <section id="main-container">
+    <div class="headertop ">
+  <div id="banner_wave_1"></div>
+  <div id="banner_wave_2"></div>
+  <figure id="centerbg" class="centerbg">
+    <div class="focusinfo no-select">
+      <!--<div class="header-tou">
+        <a target="_blank" rel="noopener" href="https://ljc0606.top">
+          <img src="https://gitee.com/ljv0606/cdn/raw/master/img/avatar.webp">
+        </a>
+      </div>-->
+      <div class="header-tou">
+        <h1 class="center-text glitch is-glitching Ubuntu-font" data-text="Free your mind">Free your mind</h1>
+      </div>
+      <div class="header-info">
+        <p>Life is just about enjoying living.</p>
+        <div class="top-social_v2">
+          <li id="bg-pre">
+            <img class="flipx" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/next-b.svg">
+          </li>
+          
+            
+              
+                <li>
+                  <a href="https://github.com/acdefg" target="_blank" class="social-github" title="github">
+                    <img src="https://gitee.com/ljv0606/cdn/raw/master/img/gitup.png">
+                  </a>
+                </li>
+              
+            
+              
+                <li>
+                  <a href="mailto:ljv0606@outlook.com" target="_blank" class="social-github" title="mail">
+                    <img src="https://gitee.com/ljv0606/cdn/raw/master/img/email.jpg">
+                  </a>
+                </li>
+              
+            
+              
+                <li>
+                  <a href="https://gitee.com/ljv0606" target="_blank" class="social-github" title="gitee">
+                    <img src="https://gitee.com/ljv0606/cdn/raw/master/img/gitee.jpg">
+                  </a>
+                </li>
+              
+            
+          
+          <li id="bg-next">
+            <img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/next-b.svg">
+          </li>
+        </div>
+      </div>
+    </div>
+  </figure>
+  <div id="video-container" style="">
+    <video style="object-fit: fill" id="bgvideo" class="video" video-name="" src="" width="auto" preload="auto">
+    </video>
+    <div id="video-btn" class="loadvideo videolive">
+    </div>
+    <div id="video-add">
+    </div>
+    <div class="video-stu">
+    </div>
+  </div>
+  <div class="headertop-down faa-float animated" onclick="headertop_down()">
+    <span>
+      <i class="fa fa-chevron-down" aria-hidden="true">
+      </i>
+    </span>
+  </div>
+</div>
+    <div id="page" class="site wrapper">
+      <header class="site-header no-select gizle sabit" role="banner">
+  <div class="site-top">
+    <div class="site-branding">
+      <span class="site-title">
+        <span class="logolink moe-mashiro">
+          <a href=https://ljc0606.top> 
+            <ruby>
+              <span class="sakuraso">Cici&#39;s</span>
+              <span class="no">の</span>
+              <span class="shironeko">blog</span>
+            </ruby> 
+          </a>
+        </span>
+      </span>
+    </div>
+    <div class="searchbox search-form-submit">
+      <i class="iconfont js-toggle-search iconsearch icon-search">
+      </i>
+    </div>
+    <div id="show-nav" class="showNav mobile-fit">
+      <div class="line line1">
+      </div>
+      <div class="line line2">
+      </div>
+      <div class="line line3">
+      </div>
+    </div>
+    <div class="lower-cantiner">
+      <div class="lower">
+        <nav class="mobile-fit-control hide">
+          <ul id="menu-new" class="menu">
+            
+              <li>
+                <a href="/">
+                  <span class="faa-parent animated-hover">
+                    <i class="fa  fa-fort-awesome faa-shake" aria-hidden="true"></i>
+                    首页
+                  </span>
+                </a>
+                
+              </li>
+            
+              <li>
+                <a href="/archives">
+                  <span class="faa-parent animated-hover">
+                    <i class="fa  fa-archive faa-bounce" aria-hidden="true"></i>
+                    归档
+                  </span>
+                </a>
+                
+                  <ul class="sub-menu">
+                    
+                      <li>
+                        <a href="/categories/%E7%94%9F%E6%B4%BB/">
+                          <span class="faa-parent animated-hover"></span>
+                            <i class="fa fa-bath" aria-hidden="true"></i>
+                            生活
+                          </span>
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="/categories/%E5%AD%A6%E4%B9%A0/">
+                          <span class="faa-parent animated-hover"></span>
+                            <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                            学习
+                          </span>
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="/categories/%E5%85%B4%E8%B6%A3/">
+                          <span class="faa-parent animated-hover"></span>
+                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            兴趣
+                          </span>
+                        </a>
+                      </li>
+                    
+                  </ul>
+                
+              </li>
+            
+              <li>
+                <a href="javascript:;">
+                  <span class="faa-parent animated-hover">
+                    <i class="fa  fa-list-ul faa-vertical" aria-hidden="true"></i>
+                    清单
+                  </span>
+                </a>
+                
+                  <ul class="sub-menu">
+                    
+                      <li>
+                        <a href="/tags/%E4%B9%A6%E5%8D%95/">
+                          <span class="faa-parent animated-hover"></span>
+                            <i class="fa fa-list-alt faa-bounce" aria-hidden="true"></i>
+                            书单
+                          </span>
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="/bangumi/">
+                          <span class="faa-parent animated-hover"></span>
+                            <i class="fa fa-film faa-vertical" aria-hidden="true"></i>
+                            电影
+                          </span>
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="/video/">
+                          <span class="faa-parent animated-hover"></span>
+                            <i class="fa fa-camera-retro faa-shake" aria-hidden="true"></i>
+                            图集
+                          </span>
+                        </a>
+                      </li>
+                    
+                  </ul>
+                
+              </li>
+            
+              <li>
+                <a href="/comment/">
+                  <span class="faa-parent animated-hover">
+                    <i class="fa  fa-pencil-square-o faa-tada" aria-hidden="true"></i>
+                    留言板
+                  </span>
+                </a>
+                
+              </li>
+            
+              <li>
+                <a href="/links/">
+                  <span class="faa-parent animated-hover">
+                    <i class="fa  fa-link faa-shake" aria-hidden="true"></i>
+                    参考集
+                  </span>
+                </a>
+                
+              </li>
+            
+              <li>
+                <a href="/">
+                  <span class="faa-parent animated-hover">
+                    <i class="fa  fa-leaf faa-bounce" aria-hidden="true"></i>
+                    关于
+                  </span>
+                </a>
+                
+                  <ul class="sub-menu">
+                    
+                      <li>
+                        <a href="/about/">
+                          <span class="faa-parent animated-hover"></span>
+                            <i class="fa fa-meetup" aria-hidden="true"></i>
+                            我？
+                          </span>
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="/lab/">
+                          <span class="faa-parent animated-hover"></span>
+                            <i class="fa fa-flask" aria-hidden="true"></i>
+                            Lab
+                          </span>
+                        </a>
+                      </li>
+                    
+                  </ul>
+                
+              </li>
+            
+              <li>
+                <a href="/atom.xml">
+                  <span class="faa-parent animated-hover">
+                    <i class="fa  fa-rss faa-wrench" aria-hidden="true"></i>
+                    RSS
+                  </span>
+                </a>
+                
+              </li>
+            
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <link rel="stylesheet" type="text/css" href="/css/sharejs.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+<div class="pattern-center-blank"></div>
+
+  <div class="pattern-center single-center">
+    <!-- 有配图默认渲染第一张 -->
+    <div class="pattern-attachment-img lazyload" style="background-image: url(https://gitee.com/ljv0606/cdn/raw/master/img/authorweb.webp);" src="https://gitee.com/ljv0606/cdn/raw/master/img/loading.gif" data-src="https://gitee.com/ljv0606/cdn/raw/master/img/authorweb.webp">
+    </div>
+    <header class="pattern-header single-header">
+      <h1 class="entry-title">
+      Hexo安装记录</h1>
+      <p class="entry-census">
+        <span>
+          <a href="/about">
+            <img src="https://gitee.com/ljv0606/cdn/raw/master/img/表情1.jpg">
+          </a>
+        </span>
+        <span>
+          <a href="/about">Cici</a>
+        </span>
+        <span class="bull">
+        ·</span>
+        2022-1-20<span class="bull">
+        ·</span>
+      <span id="busuanzi_value_page_pv"></span>次阅读</p>
+    </header>
+  </div>
+
+<div id="content" class="site-content">
+  <div id="primary" class="content-area">
+    <main id="main" class="site-main" role="main">
+      <article id="post-1" class="post-1 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
+        <div class="toc"></div>
+        <!--<div class="toc-entry-content"><!-- 套嵌目录使用（主要为了支援评论）-->
+        
+        <div class="entry-content">
+          <h3 id="环境配置"><a href="#环境配置" class="headerlink" title="环境配置"></a>环境配置</h3><p>参考： <a target="_blank" rel="noopener" href="https://blog.csdn.net/sinat_37781304/article/details/82729029#t2">https://blog.csdn.net/sinat_37781304/article/details/82729029#t2</a></p>
+<p>简单列一下:</p>
+<h4 id="git环境（对于整个大环境）"><a href="#git环境（对于整个大环境）" class="headerlink" title="git环境（对于整个大环境）"></a>git环境（对于整个大环境）</h4><p><code>sudo apt-get install git</code>对于整个大环境，就是可以在根目录安装<br><br>同步github</p>
+<pre><code>git config --global user.name &quot;yourname&quot;
+git config --global user.email &quot;youremail&quot;
+</code></pre>
+<p>检查</p>
+<pre><code>git config user.name 
+git config user.email
+</code></pre>
+<p>生成公匙，并查看</p>
+<pre><code>ssh-keygen -t rsa -C &quot;youremail&quot;
+gedit ~/.ssh/id_rsa.pub
+</code></pre>
+<p>github后台添加公匙（gitee也可以用这个）</p>
+<pre><code>ssh -T git@github.com
+ssh -T git@gitee.com
+</code></pre>
+<h4 id="git-deploy"><a href="#git-deploy" class="headerlink" title="git deploy"></a>git deploy</h4><p>(这个先不安，要先安hexo环境，后面还会写一遍，放在这里是因为我每次建新的blog的时候hexo已经配置过了，只用在新文件夹安装一遍这个)</p>
+<pre><code>npm install hexo-deployer-git --save
+</code></pre>
+<h4 id="hexo环境（对于整个大环境）"><a href="#hexo环境（对于整个大环境）" class="headerlink" title="hexo环境（对于整个大环境）"></a>hexo环境（对于整个大环境）</h4><pre><code>sudo apt-get install nodejs
+sudo apt-get install npm
+npm install -g hexo-cli
+</code></pre>
+<p>检查</p>
+<pre><code>node -v
+npm -v
+hexo -v
+</code></pre>
+<h3 id="初始化一个blog文件夹"><a href="#初始化一个blog文件夹" class="headerlink" title="初始化一个blog文件夹"></a>初始化一个blog文件夹</h3><pre><code>hexo init myblog //myblog随便取
+cd myblog 
+npm install
+npm install hexo-deployer-git --save //git deply
+</code></pre>
+<ol>
+<li>换theme</li>
+<li>改confi</li>
+<li>调试<pre><code>hexo g
+hexo server
+</code></pre>
+ 最彻底的编译<pre><code>hexo cl //hexo clean
+hexo g  //hexo generate
+hexo s  //hexo server
+</code></pre>
+ 方便，但是用的时候不如上一个配置的彻底<pre><code>hexo cl &amp; hexo g &amp; hexo s
+</code></pre>
+ 没有改confi，重启本地服务器调试<pre><code>hexo s -g
+</code></pre>
+</li>
+<li>上传<code>hexo d</code><pre><code> deploy:
+     type: git
+     message: generate my blog
+     repository:
+         github: git@github.com:acdefg/acdefg.github.io.git
+         gitee: git@gitee.com:ljv0606/ljv0606.git
+     branch: master
+</code></pre>
+</li>
+<li>备份<code>hexo b</code> 只在主题sakura中看见作者配置了，其他主题不知道能不能用（查了一下属于hexo的一个插件，安装一下就可以用了：backup）<pre><code> backup:
+     type: git
+     message: backup my blog
+     repository:
+         github: git@github.com:acdefg/acdefg.github.io.git,backup
+</code></pre>
+</li>
+</ol>
+<h3 id="sakura主题"><a href="#sakura主题" class="headerlink" title="sakura主题"></a>sakura主题</h3><p>参考链接：<br>主题作者写的文档：<a target="_blank" rel="noopener" href="https://docs.hojun.cn/sakura/docs/#/home">https://docs.hojun.cn/sakura/docs/#/home</a><br><br>作者自己的博客：<a target="_blank" rel="noopener" href="https://2heng.xin/">https://2heng.xin/</a><br><br>同主题大佬的博客：<a target="_blank" rel="noopener" href="https://flymc.cc/Sakura/">https://flymc.cc/Sakura/</a><br></p>
+<h4 id="fontaware动态效果"><a href="#fontaware动态效果" class="headerlink" title="fontaware动态效果"></a>fontaware动态效果</h4><p>这里可根据自己的需要进行修改，不需要的可以删除或者#注释掉，path: &#x2F;xxx&#x2F; 所在目录为\Blog\source\xxx\，<br>fa: fa-xxx 为图标，可在Font-Awesome官网中搜索到，如游戏机图标为 fa-gamepad。<br>faa-xxxxx 为鼠标悬浮在图标上的动态效果，如 faa-shake 为左右摇晃，faa-vertical 垂直摇晃，可根据自己喜好修改，在后续添加顶栏菜单项时也可以自行使用。</p>
+<h4 id="更新主题出现的问题"><a href="#更新主题出现的问题" class="headerlink" title="更新主题出现的问题"></a>更新主题出现的问题</h4><p>更换主题后上传一直不成功，然后才发现更换了文件夹，新配置的hexo的各个配件的版本都特别低<br><br>更新语句:<br>check1：有指示怎么安装</p>
+<pre><code>npm install -g npm-check 
+npm-check 
+</code></pre>
+<p>check2：按照以下步骤无脑安装</p>
+<pre><code>npm install -g npm-check-updates
+ncu -u
+npm update
+npm install
+</code></pre>
+<p>两种check各有千秋，以下是特定版本的安装</p>
+<pre><code>npm install --save hexo@5.0.0
+</code></pre>
+<p>浏览器缓存也会影响页面更新显示，一般可以用更换一个浏览器来检测是不是这个问题<br><br>按<code>f12</code>或者<code>ctrl+shift+c</code>打开开发者模式，在网络中禁用缓存（disable cache）</p>
+<h4 id="标题那里的动态特效"><a href="#标题那里的动态特效" class="headerlink" title="标题那里的动态特效"></a>标题那里的动态特效</h4><p>这个特效我看大佬原博客上面有,但是大佬发的这个hexo主题下载下来并没有，我又基本上没有接触过前端代码，但是呜呜呜真的很想要，所以就只能硬刚了<br><br><img src="https://gitee.com/ljv0606/cdn/raw/master/mdimg/blogicon.png" alt="左上角logo"></p>
+<a target="_blank" rel="noopener" href="https://gitee.com/ljv0606/cdn/raw/master/mdimg/blogicon.png" data-fancybox="images" data-caption="logo图"><img src="https://gitee.com/ljv0606/cdn/raw/master/mdimg/blogicon.png" /></a>
+
+<p>首先打开大佬博客的网站源码，然后再baidu一下代码，这样这样，那样那样，就成了<br><br>先把元素的定义加上在header.ejs里，这是改后的代码，改前的的没了，按没改的地方搜一下就好了</p>
+<pre><code>    &lt;div class=&quot;site-branding&quot;&gt;
+      &lt;span class=&quot;site-title&quot;&gt;
+        &lt;span class=&quot;logolink moe-mashiro&quot;&gt;
+          &lt;a href=&lt;%= theme.url %&gt;&gt; 
+            &lt;ruby&gt;
+              &lt;span class=&quot;sakuraso&quot;&gt;&lt;%= theme.prefixName %&gt;&lt;/span&gt;
+              &lt;span class=&quot;no&quot;&gt;の&lt;/span&gt;
+              &lt;span class=&quot;shironeko&quot;&gt;&lt;%= theme.siteName %&gt;&lt;/span&gt;
+            &lt;/ruby&gt; 
+          &lt;/a&gt;
+        &lt;/span&gt;
+      &lt;/span&gt;
+    &lt;/div&gt;
+</code></pre>
+<p>改得地方<code>&lt;a&gt;</code>里面的：</p>
+<pre><code>          &lt;a href=&lt;%= theme.url %&gt;&gt; 
+            &lt;ruby&gt;
+              &lt;span class=&quot;sakuraso&quot;&gt;&lt;%= theme.prefixName %&gt;&lt;/span&gt;
+              &lt;span class=&quot;no&quot;&gt;の&lt;/span&gt;
+              &lt;span class=&quot;shironeko&quot;&gt;&lt;%= theme.siteName %&gt;&lt;/span&gt;
+            &lt;/ruby&gt; 
+          &lt;/a&gt;
+</code></pre>
+<p>然后style.css里面找sakuraso，对了为了方便我把原来的sakurasono全改成sakuraso查找替换麻，也就三个</p>
+<pre><code>.logolink.moe-mashiro .sakuraso, .logolink.moe-mashiro .no &#123;
+    font-size:25px;
+    border-radius:9px;
+    padding-bottom:2px;
+    padding-top:5px
+&#125;
+.logolink a:hover .no &#123;
+    -webkit-animation: spin 1s linear infinite;/*鼠标hover时，i图标旋转,infinite表示动画无限循环*/
+    animation: spin 1s linear infinite;    
+&#125;
+/*定义动画*/
+@-webkit-keyframes spin &#123; /*兼容性写法。spin是关键帧的动画名称*/
+from &#123; /*动画起始状态*/
+    -webkit-transform: rotate(0deg);
+&#125;
+to &#123; /*动画结束状态*/
+    -webkit-transform: rotate(360deg);
+&#125;
+&#125;
+@keyframes spin &#123;
+from &#123;
+    transform: rotate(0deg);
+&#125;
+to &#123;
+    transform: rotate(360deg);
+&#125;
+&#125;
+.logolink a:hover .no &#123;
+    -webkit-animation: spin 1s linear infinite;/*鼠标hover时，i图标旋转,infinite表示动画无限循环*/
+    animation: spin 1s linear infinite;    
+&#125;
+</code></pre>
+<p>这个改的原来的，加了个<code>logolink.moe-mashiro .no</code>,其他的就都是新加的</p>
+<pre><code>.logolink.moe-mashiro .sakuraso, .logolink.moe-mashiro .no &#123;
+    font-size:25px;
+    border-radius:9px;
+    padding-bottom:2px;
+    padding-top:5px
+&#125;
+</code></pre>
+<p>参考博客：<a target="_blank" rel="noopener" href="https://blog.csdn.net/erdouzhang/article/details/71402747">https://blog.csdn.net/erdouzhang/article/details/71402747</a><br>其他还有一些实现旋转的代码好像都不行，我觉得应该是元素类型的原因（假装就是这样）</p>
+
+        </div>
+        <!-- .entry-content -->
+        <div style="text-align:center; width: 100%" class="social-share share-mobile" data-disabled="diandian, tencent"></div>
+        <footer class="post-footer">
+          <div class="post-lincenses"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="nofollow"><i class="fa fa-creative-commons" aria-hidden="true"></i> 知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a></div>
+          <div class="post-tags">
+          </div>
+          <div class="post-share">
+            <div class="social-share sharehidden share-component"></div>
+            <i class="iconfont show-share icon-forward"></i>
+          </div>
+        </footer><!-- .entry-footer -->
+      </article>
+      <!-- #post-## -->
+      <div class="toc" style="background: none;"></div>
+      <section class="post-squares nextprev">
+        
+          
+            <div class="post-nepre half previous">
+          
+            <a href="/%E6%8A%80%E6%9C%AF/markdown%E4%B8%80%E4%BA%9B%E8%AF%AD%E6%B3%95%E8%AE%B0%E5%BD%95/" rel="prev">
+              <div class="background">
+                <img class="lazyload" src="https://gitee.com/ljv0606/cdn/raw/master/img/loading.gif" data-src="https://gitee.com/ljv0606/cdn/raw/master/img/f3.webp" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://gitee.com/ljv0606/cdn/raw/master/img/f3.webp">
+              </div>
+              <span class="label">
+              Previous Post</span>
+              <div class="info">
+                <h3>
+                markdown一些语法记录</h3>
+                <hr>
+              </div>
+            </a>
+          </div>
+        
+        
+          
+            <div class="post-nepre half next">
+          
+            <a href="/%E5%8D%9A%E5%AE%A2/%E5%AE%89%E8%A3%85julp%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9D%91/" rel="next">
+              <div class="background">
+                <img class="lazyload" src="https://gitee.com/ljv0606/cdn/raw/master/img/loading.gif" data-src="https://gitee.com/ljv0606/cdn/raw/master/img/f6.webp" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://gitee.com/ljv0606/cdn/raw/master/img/f6.webp">
+              </div>
+              <span class="label">
+              Next Post</span>
+              <div class="info">
+                <h3>
+                安装julp的一些坑</h3>
+                <hr>
+              </div>
+            </a>
+          </div>
+        
+      </section>
+      
+<div id="vcomments"></div>
+<script>
+  window.onload = function(){
+      var valine = new Valine();
+      valine.init({
+        el: '#vcomments',
+        appId: "ySRMleyxDW43TSYlnWifvx99-gzGzoHsz",
+        appKey: "yn6scDoqTa50RWa6QSgcIA38",
+        path: window.location.pathname,
+        placeholder: "你是我一生只会遇见一次的惊喜 ..."
+      })
+  }
+</script>
+
+
+
+
+      <section class="author-profile">
+        <div class="info" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+          <a href="/about" class="profile gravatar"><img src="https://gitee.com/ljv0606/cdn/raw/master/img/表情1.jpg" itemprop="image" alt="Cici" height="70" width="70"></a>
+          <div class="meta">
+            <span class="title">Author</span>
+            <h3 itemprop="name">
+            <a href="/about" itemprop="url" rel="author">Cici</a>
+            </h3>
+          </div>
+        </div>
+        <hr>
+        <p><i class="iconfont icon-write"></i>小菜本菜</p>
+      </section>
+    </main><!-- #main -->
+  </div><!-- #primary -->
+</div>
+
+
+
+    </div>    
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="你要找啥，我大发慈悲地帮你一下"/>
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '文章',
+            // PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+    <!-- <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2022 Cici<br>
+      powered_by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer> -->
+
+<footer id="colophon" class="site-footer" role="contentinfo">
+  <div class="site-info">
+    <div class="footertext">
+      <div class="img-preload">
+        <img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/wordpress-rotating-ball-o.svg">
+        <img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/disqus-preloader.svg">
+      </div>
+      <p style="color: #666666;">&copy 2022</p>
+    </div>
+    <div class="footer-device">
+    <p style="font-family: 'Ubuntu', sans-serif;">
+        <span style="color: #b9b9b9;">Theme <a href="https://github.com/honjun/hexo-theme-sakura" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Sakura</a> <i class="iconfont icon-sakura rotating" style="color: #ffc0cb;display:inline-block"></i> </a>, Powered by Hexo,</a>
+        </span>
+      </p>
+    </div>
+  </div><!-- .site-info -->
+</footer>
+
+<!-- <script src="/js/tocbot.js"></script> -->
+<script type="text/javascript" src="/js/lib.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+<script type="text/javascript" src="/js/InsightSearch.js"></script>
+<script type="text/javascript" src="/js/jquery.fancybox.min.js"></script>
+<script type="text/javascript" src="/js/zoom.min.js"></script>
+<script type="text/javascript" src="/js/sakura-app.js"></script>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src='//unpkg.com/valine@1.3.4/dist/Valine.min.js'></script>
+<!--<script type="text/javascript" src="/js/Valine.min.js"></script>-->
+<script src="/js/botui.js"></script>
+
+<!-- 不蒜子 网页计数器 -->
+<script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script> -->
+<script type="text/javascript">
+
+/* <![CDATA[ */
+if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+  var Poi = {"pjax":"1","movies":{"url": "https://gitee.com/ljv0606/cdn/raw/master/img","name":"yanshi.flv","live":"close"},"windowheight":"fixed","codelamp":"close","ajaxurl":"","order":"asc","formpostion":"bottom"};
+} else {
+  var Poi = {"pjax":"1","movies":{"url": "https://gitee.com/ljv0606/cdn/raw/master/img","name":"yanshi.flv","live":"open"},"windowheight":"auto","codelamp":"close","ajaxurl":"","order":"asc","formpostion":"bottom"};
+}
+/* ]]> */
+
+</script>
+<script>
+$(document).ready(function() {
+  if ($(".toc").length > 0 && document.body.clientWidth > 1200) {
+    if ($(".pattern-center").length > 0) { //有图的情况
+      tocbot.init({
+          // Where to render the table of contents.
+          tocSelector: '.toc', // 放置目录的容器
+          // Where to grab the headings to build the table of contents.
+          contentSelector: '.entry-content', // 正文内容所在
+          // Which headings to grab inside of the contentSelector element.
+          scrollSmooth: true,
+          headingSelector: 'h1, h2, h3, h4, h5', // 需要索引的标题级别
+          headingsOffset: -400,
+          scrollSmoothOffset: -85
+      });
+    } else {
+      tocbot.init({
+          // Where to render the table of contents.
+          tocSelector: '.toc', // 放置目录的容器
+          // Where to grab the headings to build the table of contents.
+          contentSelector: '.entry-content', // 正文内容所在
+          // Which headings to grab inside of the contentSelector element.
+          scrollSmooth: true,
+          headingSelector: 'h1, h2, h3, h4, h5', // 需要索引的标题级别
+          headingsOffset: -85,
+          scrollSmoothOffset: -85
+      });
+    }
+    var offsetTop = $('.toc').offset().top - 95;
+    window.onscroll = function() {
+      var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+      if (scrollTop >= offsetTop) {
+        $('.toc').addClass('toc-fixed');
+      } else {
+        $('.toc').removeClass('toc-fixed');
+      }
+    }
+  }
+});
+</script>
+
+    <div class="openNav no-select" style="height: 50px;">
+      <div class="iconflat no-select" style="width: 50px; height: 50px;">
+        <div class="icon"></div>
+      </div>
+      <div class="site-branding search-form-submit">
+        <i class="iconfont js-toggle-search iconsearch icon-search"></i>
+      </div>
+    </div>
+  </section>
+  <div id="mo-nav" class="">
+  <div class="m-avatar">
+    <img src="https://gitee.com/ljv0606/cdn/raw/master/img/avatar.webp">
+  </div>
+  <p style="text-align: center; color: #333; font-weight: 900; font-family: 'Ubuntu', sans-serif; letter-spacing: 1.5px">Cici'sblog</p>
+  <p style="text-align: center; word-spacing: 20px;">
+    
+      
+        <a href="https://github.com/acdefg" class="fa fa-github" target="_blank" style="color: #333; margin-left:20px"></a>
+      
+        <a href="https://gitee.com/ljv0606" class="fa fa-git" target="_blank" style="color: #dd4b39; margin-left:20px"></a>
+      
+    
+  </p>
+  <ul id="menu-new-1" class="menu">
+    
+      <li>
+        <a href="/">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-fort-awesome faa-shake" aria-hidden="true"></i>
+            首页
+          </span>
+        </a>
+        
+      </li>
+    
+      <li>
+        <a href="/archives">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-archive faa-bounce" aria-hidden="true"></i>
+            归档
+          </span>
+        </a>
+        
+          <ul class="sub-menu">
+            
+              <li>
+                <a href="/categories/%E7%94%9F%E6%B4%BB/">
+                  <i class="fa fa-bath" aria-hidden="true"></i>
+                  生活
+                </a>
+              </li>
+            
+              <li>
+                <a href="/categories/%E5%AD%A6%E4%B9%A0/">
+                  <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                  学习
+                </a>
+              </li>
+            
+              <li>
+                <a href="/categories/%E5%85%B4%E8%B6%A3/">
+                  <i class="fa fa-heart-o" aria-hidden="true"></i>
+                  兴趣
+                </a>
+              </li>
+            
+          </ul>
+        
+      </li>
+    
+      <li>
+        <a href="javascript:;">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-list-ul faa-vertical" aria-hidden="true"></i>
+            清单
+          </span>
+        </a>
+        
+          <ul class="sub-menu">
+            
+              <li>
+                <a href="/tags/%E4%B9%A6%E5%8D%95/">
+                  <i class="fa fa-list-alt faa-bounce" aria-hidden="true"></i>
+                  书单
+                </a>
+              </li>
+            
+              <li>
+                <a href="/bangumi/">
+                  <i class="fa fa-film faa-vertical" aria-hidden="true"></i>
+                  电影
+                </a>
+              </li>
+            
+              <li>
+                <a href="/video/">
+                  <i class="fa fa-camera-retro faa-shake" aria-hidden="true"></i>
+                  图集
+                </a>
+              </li>
+            
+          </ul>
+        
+      </li>
+    
+      <li>
+        <a href="/comment/">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-pencil-square-o faa-tada" aria-hidden="true"></i>
+            留言板
+          </span>
+        </a>
+        
+      </li>
+    
+      <li>
+        <a href="/links/">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-link faa-shake" aria-hidden="true"></i>
+            参考集
+          </span>
+        </a>
+        
+      </li>
+    
+      <li>
+        <a href="/">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-leaf faa-bounce" aria-hidden="true"></i>
+            关于
+          </span>
+        </a>
+        
+          <ul class="sub-menu">
+            
+              <li>
+                <a href="/about/">
+                  <i class="fa fa-meetup" aria-hidden="true"></i>
+                  我？
+                </a>
+              </li>
+            
+              <li>
+                <a href="/lab/">
+                  <i class="fa fa-flask" aria-hidden="true"></i>
+                  Lab
+                </a>
+              </li>
+            
+          </ul>
+        
+      </li>
+    
+      <li>
+        <a href="/atom.xml">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-rss faa-wrench" aria-hidden="true"></i>
+            RSS
+          </span>
+        </a>
+        
+      </li>
+    
+  </ul>
+  <p style="text-align: center; font-size: 13px; color: #b9b9b9;">&copy 2019 hexo-sakura</p>
+</div>
+<button onclick="topFunction()" class="mobile-cd-top" id="moblieGoTop" title="Go to top" style="display: none;"><i class="fa fa-chevron-up" aria-hidden="true"></i></button>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+<!-- require MetingJS -->
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+<style>
+  .aplayer .aplayer-lrc {
+    height: 35px;
+  }
+  .aplayer .aplayer-lrc p{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18px !important;
+  }
+  .aplayer .aplayer-lrc p.aplayer-lrc-current{
+    color: #FF1493;
+  }
+  .aplayer.aplayer-narrow .aplayer-body{
+    left: -66px !important;
+  }
+  .aplayer.aplayer-fixed .aplayer-lrc {
+    display: none;
+  }
+  .aplayer .aplayer-lrc.aplayer-lrc-hide {
+      display:none !important;
+  }
+  .aplayer.aplayer-fixed .lrc-show {
+    display: block;
+    background: rgba(255, 255, 255, 0.8);
+  }
+</style>
+<meting-js
+
+    id="2722953071"
+
+    server="netease"
+
+    type="playlist"
+
+    fixed="true"
+
+    autoplay="false"
+
+    loop="all"
+
+    order="random"
+
+    preload="auto"
+
+    volume="0.7"
+
+    mutex="true"
+
+</meting-js>
+<script>
+  $(function(){
+    $('body').on('click', '.aplayer', function(){
+      if($('.aplayer-button').hasClass('aplayer-play')) {
+        $('.aplayer-lrc').removeClass('lrc-show');
+      } else {
+        $('.aplayer-lrc').addClass('lrc-show');
+      }
+    })
+  });
+</script>
+  
+  <!--mermaid,dark.defalut,neutral,forest-->
+  
+    <!--<script src='https://cdn.jsdelivr.net/gh/acdefg/cdn/modules/mermaid/mermaid.min.js'></script>-->
+    <!-- <script src='https://unpkg.com/mermaid@7.1.2/dist/mermaid.min.js'></script> -->
+    <script src='https://cdn.jsdelivr.net/gh/acdefg/cdn/modules/mermaid/mermaid.min.js'></script>
+    <script>
+      if (window.mermaid) {
+        mermaid.initialize({theme: 'neutral'});
+      }
+    </script>
+
+
+</body>
+</html>
