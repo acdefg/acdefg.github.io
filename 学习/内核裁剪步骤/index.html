@@ -374,17 +374,16 @@
           <p>关机指令：</p>
 <pre><code class="shell"> sudo shutdown -h now
 </code></pre>
-<p>密码：raspbeerry</p>
-<p>仅使用于raspberry 4</p>
 <h2 id="环境安装"><a href="#环境安装" class="headerlink" title="环境安装"></a>环境安装</h2><pre><code class="bash">sudo apt install git bc bison flex libssl-dev make libc6-dev libncurses5-dev
 </code></pre>
 <pre><code class="bash">sudo apt install crossbuild-essential-arm64
 </code></pre>
 <h3 id="Meneconfig"><a href="#Meneconfig" class="headerlink" title="Meneconfig"></a>Meneconfig</h3><pre><code class="shell">sudo apt install libncurses5-dev
 </code></pre>
-<pre><code class="bash">git clone --depth=1 --branch rpi-5.15.y https://github.com/raspberrypi/linux
+<h3 id="环境下载"><a href="#环境下载" class="headerlink" title="环境下载"></a>环境下载</h3><pre><code class="bash">git clone --depth=1 --branch rpi-5.15.y https://github.com/raspberrypi/linux
 </code></pre>
-<pre><code class="shell">cd linux
+<p>在下载好源码的目录下输入：</p>
+<h3 id="编译模块安装生成镜像"><a href="#编译模块安装生成镜像" class="headerlink" title="编译模块安装生成镜像"></a>编译模块安装生成镜像</h3><pre><code class="shell">cd linux
 KERNEL=kernel8
 make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- bcm2711_defconfig
 </code></pre>
@@ -397,8 +396,8 @@ sudo cp arch/arm64/boot/dts/overlays/*.dtb* /boot/overlays/
 sudo cp arch/arm64/boot/dts/overlays/README /boot/overlays/
 sudo cp arch/arm64/boot/Image.gz /boot/$KERNEL.img
 </code></pre>
-<p>插 SD 卡<br>lsblk 挂载前后看看<br><img src="https://raw.githubusercontent.com/acdefg/cdn/main/obsidian/202211110954375.png"></p>
-<p>Sudo dmesg 挂载成功标志</p>
+<h3 id="内核修改"><a href="#内核修改" class="headerlink" title="内核修改"></a>内核修改</h3><h3 id="内核拷贝"><a href="#内核拷贝" class="headerlink" title="内核拷贝"></a>内核拷贝</h3><p>插 SD 卡<br>lsblk 挂载前后看看<br><img src="https://raw.githubusercontent.com/acdefg/cdn/main/obsidian/202211110954375.png"></p>
+<p>Sudo dmesg 挂载成功标志可以不看</p>
 <pre><code class="bash">mkdir mnt
 mkdir mnt/fat32
 mkdir mnt/ext4
